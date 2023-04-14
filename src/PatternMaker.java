@@ -12,7 +12,8 @@ public class PatternMaker {
         //pattern3();
         //pattern5();
         //pattern6();
-        pattern4();
+        //pattern4();
+        pattern7();
 
     }
 
@@ -57,14 +58,30 @@ public class PatternMaker {
         }
     }
     public void pattern6(){
-        for(int r = 1; r<6; r++){
-            System.out.print("\t"+r);
-            System.out.println();
+        for (int z = 1; z < 6; z++) {
+
+            for (int r = 1; r < z; r++) {
+                System.out.print(" ");
+            }
+            System.out.println(z);
         }
     }
-    public void pattern4(){
-        for(int r = 1; r<6; r++){
-            System.out.print((r*r)+"\t");
+    public void pattern4() {
+        for (int z = 1; z < 5; z++) {
+            System.out.print("\t");
+            for (int r = 1; r < 6; r++) {
+                System.out.print((r * r) + "\t");
+            }
+        }
+    }
+    public void pattern7(){
+        for (int z = 6; z > 0; z--) {
+
+            for (int r = 1; r < z; r++) {
+                System.out.println(r);
+
+            }
+
         }
     }
 }
