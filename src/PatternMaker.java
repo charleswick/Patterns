@@ -10,7 +10,9 @@ public class PatternMaker {
         //pattern1();
         //pattern2();
         //pattern3();
-        pattern5();
+        //pattern5();
+        //pattern6();
+        pattern4();
 
     }
 
@@ -52,6 +54,17 @@ public class PatternMaker {
 
             }
             System.out.println();
+        }
+    }
+    public void pattern6(){
+        for(int r = 1; r<6; r++){
+            System.out.print("\t"+r);
+            System.out.println();
+        }
+    }
+    public void pattern4(){
+        for(int r = 1; r<6; r++){
+            System.out.print((r*r)+"\t");
         }
     }
 }
